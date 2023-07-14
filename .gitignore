@@ -1,0 +1,12 @@
+fastdds_ws/src/*
+fastdds_ws/build
+fastdds_ws/install
+fastdds_ws/log
+
+ros_ws/src/*
+ros_ws/build
+ros_ws/install
+ros_ws/log
+
+!ros_ws/src/test_package/
+!ros_ws/src/test_package

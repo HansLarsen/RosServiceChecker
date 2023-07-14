@@ -15,7 +15,7 @@ public:
   rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn
   on_configure(const rclcpp_lifecycle::State &)
   {
-    RCLCPP_INFO(get_logger(), "Configuring…");
+    RCLCPP_WARN(get_logger(), "Configuring…");
 
     // Create a publisher with a custom Quality of Service profile.
     rclcpp::QoS qos(rclcpp::KeepLast(7));
@@ -28,7 +28,7 @@ public:
   rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn
   on_activate(const rclcpp_lifecycle::State &)
   {
-    RCLCPP_INFO(get_logger(), "Activating…");
+    RCLCPP_WARN(get_logger(), "Activating…");
     // Create a function for when messages are to be sent.
     auto publish_message =
         [this]() -> void
