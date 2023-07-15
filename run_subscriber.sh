@@ -1,3 +1,4 @@
+#!/bin/bash
 docker run -it -v $(pwd):/workspace \
  -w /workspace \
  --rm \
