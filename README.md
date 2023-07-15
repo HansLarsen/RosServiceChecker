@@ -35,4 +35,4 @@ For every subscriber and publisher a new terminal is needed.
 ```
 
 # Video of the bug
-<video src='demo.gif' width=180/>
+![demo](demo.gif)
